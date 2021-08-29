@@ -4,7 +4,7 @@
   "description": "clothes website",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev source/index.ts",
+    "start": "ts-node-dev index.ts",
     "test": "jest"
   },
   "repository": {

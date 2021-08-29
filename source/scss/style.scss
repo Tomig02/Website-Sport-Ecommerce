@@ -1,0 +1,89 @@
+
+$main: red;
+
+footer{
+    margin-top: 4em;
+    padding-bottom: 3em;
+    
+    background: #fafafa;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media(min-width: 766px){
+        .row{
+            flex-direction: row;
+        }
+    }
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    p{
+        margin: 1em;
+    }
+}
+.services{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    li{
+        padding: 2em 1em;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-links{
+    margin-top: 2em;
+    li{
+        margin-bottom: 1em;
+        
+    }
+}
+.input-container{
+    display: flex;
+    align-items: center;
+}
+.input-field{
+    border: none;
+    border-bottom: 0.1em solid $main;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-left: auto;
+    background: none;
+    outline: none;
+}
+.input-send{
+    background: transparent;
+    margin-right: auto;
+    color: $main;
+}
+
+.link-contact{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.row-links-wrapper, .newsletter{
+    min-width: 13rem;
+    padding: 1rem;
+    flex: 1 1 25%;
+}
+.row-links-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@import './general';

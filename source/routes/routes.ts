@@ -1,9 +1,7 @@
 import * as express from 'express';
-
+import landing from './landing';
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-    res.send('Hello World');
-});
+routes.use(landing);
 
 export default routes;

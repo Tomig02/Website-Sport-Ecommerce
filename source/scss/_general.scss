@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #212121;
+    color: white;
+}
+ol{
+    list-style: none;
+}
+
+.badge{
+    font-size: 3.5rem;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    font-family: inherit;
+    &::after{
+        content: "";
+        pointer-events: none;
+        transition: all 0.2s ease;
+        width: 100%;
+        height: 3px;
+        background: $main;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+    &:hover{
+        color: $main;
+        &::after{
+            bottom: -4px;
+        }
+    }
+}
+
+nav{
+    width: 100%;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+    .ball-1, .ball-2, .ball-3{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin-right: 0.1rem;
+    }
+    .ball-1{
+        background: red;
+    }
+    .ball-2{
+        background: green;
+    }
+    .ball-3{
+        background: blue;
+    }
+}
+.nav-links{
+    width: 80%;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 0.15rem;
+}
+.btn-styled{
+
+}
+.input-send{
+    padding: 0.35rem;
+    border: none;
+    background: $main; 
+
+    i{
+        color: black;
+        font-size: 1.5rem;
+    }  
+}
